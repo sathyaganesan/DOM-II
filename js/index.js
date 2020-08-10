@@ -25,41 +25,37 @@ wholePage.addEventListener('keyup', (e) => {
   head1.style.color = "Black";
 });
 
+//---Load---//
 
+window.addEventListener('load', () => {
+//   console.log('page is fully loaded');
+  alert('Welcome to the Fun Bus');
+});
 
+ //---Mouse Over---//
+
+const navLinks = document.querySelectorAll('.nav-link');
+    // console.log(navLinks);
+    navLinks.forEach((el) => {
+    // console.log(el);
+        el.addEventListener('mouseover', (e) => {
+            // console.log(e);
+            el.style.color = "Orange";
+        });
+
+//---Mouse Leave---//
+
+        el.addEventListener('mouseleave', (e) => {
+            // console.log(e);
+            el.style.color = "black";
+        });
+    });
+   
 
 
 // Your code goes here
 
-//  Load  //
 
-// window.addEventListener('load', () => {
-//   console.log('page is fully loaded');
-//   // alert('The page has fully loaded!');
-// });
-
-
-//  Mouse Over
-
-// const navLinks = document.querySelectorAll('.nav-link');
-// console.log(navLinks);
-// navHover.forEach((e) => {
-//   // console.log(e);
-//   e.addEventListener('mouseover', (el) => {
-//       // console.log("Pink");
-//       e.style.color = "Red";
-  // });
-
-
-// //
-// // #3 Mouse Leave
-// //
-//   // copy & pasted code
-//   e.addEventListener('mouseleave', (el) => {
-//       e.style.color = "Black";
-//   });
-// });
-// //
 // // #4 Key Down
 // //
 // let body = document.querySelector('body');
